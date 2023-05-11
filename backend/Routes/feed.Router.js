@@ -1,5 +1,5 @@
 const express = require("express");
 
-const feetRouter = express.Router();
+const feedRouter = express.Router();
 
-module.exports = feetRouter;
+module.exports = { feedRouter };
