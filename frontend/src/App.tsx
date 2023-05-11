@@ -1,7 +1,4 @@
-import React from 'react';
 import './App.css';
-// import Login from './Pages/Login';
-import "./tailwind.css"
 import Login from './Pages/Login';
 function App() {
   return (
