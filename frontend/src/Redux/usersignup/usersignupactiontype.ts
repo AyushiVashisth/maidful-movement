@@ -1,0 +1,6 @@
+
+
+
+export const POSTDATAREQUEST : string = "POSTDATAREQUEST"
+export const POSTDATASUCCESS : string = "POSTDATASUCCESS"
+export const POSTDATAFAILURE : string = "POSTDATAFAILURE"

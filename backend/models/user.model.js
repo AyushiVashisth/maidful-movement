@@ -7,8 +7,13 @@ const UserSchema = mongoose.Schema(
     password: { type: String, required: true },
     gender: { type: String, required: true },
     age: Number,
-    height: Number,
-    weight: Number,
+    weeklyReports: [
+      {
+        date: String,
+        height: Number,
+        weight: Number,
+      },
+    ],
   },
   {
     versionKey: false,
