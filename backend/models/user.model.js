@@ -12,6 +12,7 @@ const UserSchema = mongoose.Schema(
         date: String,
         height: Number,
         weight: Number,
+        bmi: Number,
       },
     ],
   },
