@@ -44,5 +44,5 @@ export interface SignUPData {
   email: string;
   password: string;
   gender: string;
-  weeklyReports: Array<IweeklyReport>
+  weeklyReports: Array<IweeklyReport>;
 }
