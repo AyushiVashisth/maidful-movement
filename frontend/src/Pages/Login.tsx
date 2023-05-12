@@ -1,49 +1,50 @@
 
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useLocation } from "react-router";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router";
 import { useAppDispatch } from "../Redux/store";
-// import { userLogin } from "../Redux/AuthLogin/login.action";
 
-interface Singleuserlogin {
-  email: string;
-  password: string;
-}
 
 export default function Login() {
+  interface Singleuserlogin {
+    email: string;
+    password: string;
+  }
   const initial: Singleuserlogin = {
     email: "",
     password: "",
-  };
+  }
   const dispatch = useAppDispatch();
   const location = useLocation();
-  const navigate=useNavigate()
+  const navigate = useNavigate()
   const [input, setInput] = useState(initial);
-  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
-    setInput({ ...input, [name]: value });
-  };
+    setInput({ ...input, [name]: value })
+  }
+  console.log(input)
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
 
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // dispatch(userLogin(input))
-  };
+  }
+
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Sign in to your account
           </h2>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-1" method="POST" onSubmit={handleSubmit}>
-            <div >
-              <label htmlFor="email" className="flex text-sm font-medium leading-6 text-gray-900">
+
+          <form className="space-y-6" method="POST" onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+
                 Email address
               </label>
               <div className="mt-2">
@@ -65,7 +66,6 @@ export default function Login() {
                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                   Password
                 </label>
-              
               </div>
               <div className="mt-2">
                 <input
@@ -84,12 +84,15 @@ export default function Login() {
             <div>
               <button
                 type="submit"
+
                 className="flex w-full mt-4 justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+
               >
                 Sign in
               </button>
             </div>
           </form>
+
           <div className="flex justify-start mt-2">
             <p className="text-sm">
               Don't have a account?
@@ -100,7 +103,10 @@ export default function Login() {
           </div>
         </div>
       </div>
+
+
+
     </>
-  );
+  )
 }
 
