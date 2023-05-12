@@ -1,9 +1,6 @@
-
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router";
 import { useAppDispatch } from "../Redux/store";
-
 
 export default function Login() {
   interface Singleuserlogin {
@@ -13,22 +10,18 @@ export default function Login() {
   const initial: Singleuserlogin = {
     email: "",
     password: "",
-  }
-  const dispatch = useAppDispatch();
-  const location = useLocation();
-  const navigate = useNavigate()
+  };
+  const navigate = useNavigate();
   const [input, setInput] = useState(initial);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
-    setInput({ ...input, [name]: value })
-  }
-  console.log(input)
+    setInput({ ...input, [name]: value });
+  };
+  console.log(input);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-
-
-  }
+    e.preventDefault();
+  };
 
   return (
     <>
@@ -40,11 +33,12 @@ export default function Login() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-
           <form className="space-y-6" method="POST" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Email address
               </label>
               <div className="mt-2">
@@ -63,7 +57,10 @@ export default function Login() {
 
             <div>
               <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Password
                 </label>
               </div>
@@ -84,9 +81,7 @@ export default function Login() {
             <div>
               <button
                 type="submit"
-
                 className="flex w-full mt-4 justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-
               >
                 Sign in
               </button>
@@ -96,17 +91,17 @@ export default function Login() {
           <div className="flex justify-start mt-2">
             <p className="text-sm">
               Don't have a account?
-              <span className="text-indigo-600 hover:cursor-pointer" onClick={() => navigate("/signup")}>
-                {" "}Sing up
+              <span
+                className="text-indigo-600 hover:cursor-pointer"
+                onClick={() => navigate("/signup")}
+              >
+                {" "}
+                Sing up
               </span>
             </p>
           </div>
         </div>
       </div>
-
-
-
     </>
-  )
+  );
 }
-
