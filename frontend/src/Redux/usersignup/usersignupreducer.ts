@@ -1,26 +1,29 @@
 
 import React from 'react'
 import * as types from "./usersignupactiontype"
-export interface Singleuser {
-    name: string;
-    id: string;
-    email : string;
-    password:string
-  }
+import { string } from 'yargs';
+
 export interface User {
      isLoading : boolean;
-     userdata : Singleuser[];
+     loginconfirmation :Actionpayload ;
      isError : boolean
   }
 
   const initstate : User ={
      isLoading : false,
-     userdata : [],
+     loginconfirmation :{
+        msg:"",
+     } ,
      isError : false
+  }
+
+  export interface Actionpayload {
+     msg:string;
+     token?:string
   }
 export interface Actionobj {
     type:string;
-    payload:Singleuser[],
+    payload:Actionpayload;
 }
 const usersignupreducer = (state: User = initstate, action: Actionobj):User=> {
     switch(action.type){
@@ -36,7 +39,7 @@ const usersignupreducer = (state: User = initstate, action: Actionobj):User=> {
                ...state,
                isError:false,
                isLoading:false,
-               userdata:action.payload,
+               loginconfirmation:action.payload,
                
            }
         }
