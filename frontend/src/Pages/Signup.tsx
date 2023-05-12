@@ -3,7 +3,6 @@ import React, { useState } from "react";
 
 import { useDispatch } from "react-redux";
 
-
 export const Signup = () => {
     interface Singleuser {
         name: string;
@@ -156,9 +155,22 @@ export const Signup = () => {
                             </p>
                         </div>
 
-                    </form>
-                </div>
+
+            <div className="flex justify-start">
+              <p className="text-sm">
+                Already have a account?
+                <span
+                  className="text-indigo-600 hover:cursor-pointer"
+                  onClick={() => navigate("/login")}
+                >
+                  {" "}
+                  Sing in
+                </span>
+              </p>
             </div>
-        </>
-    )
-}
+          </form>
+        </div>
+      </div>
+    </>
+  );
+};
