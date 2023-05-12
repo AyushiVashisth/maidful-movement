@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router";
 import React, { useState } from "react";
-import usersignupaction from "../Redux/usersignup/usersignupaction";
+
 import { useDispatch } from "react-redux";
 
 
@@ -19,6 +19,9 @@ export const Signup = () => {
     }
     const dispatch = useDispatch();
     const location = useLocation();
+
+    const navigate=useNavigate()
+
     const [input, setInput] = useState(initial);
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
         const { name, value } = e.target;
@@ -35,11 +38,7 @@ export const Signup = () => {
         <>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                    <img
-                        className="mx-auto h-10 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt="Your Company"
-                    />
+
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                         Create your account
                     </h2>
@@ -48,7 +47,10 @@ export const Signup = () => {
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form className="space-y-6" onSubmit={handleSubmit} method="POST">
                         <div>
-                            <label htmlFor="fname" className="block text-sm font-medium leading-6 text-gray-900">
+
+                            <label htmlFor="fname" className="flex text-sm font-medium leading-6 text-gray-900">
+
+
                                 Name
                             </label>
                             <div className="mt-2">
@@ -65,7 +67,8 @@ export const Signup = () => {
                         </div>
 
                         <div>
-                            <label htmlFor="femail" className="block text-sm font-medium leading-6 text-gray-900">
+
+                            <label htmlFor="femail" className="flex text-sm font-medium leading-6 text-gray-900">    
                                 Email address
                             </label>
                             <div className="mt-2">
@@ -100,7 +103,9 @@ export const Signup = () => {
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="fphone_number" className="block text-sm font-medium leading-6 text-gray-900">
+
+                            <label htmlFor="fphone_number" className="flex text-sm font-medium leading-6 text-gray-900">
+
                                 Phone Number
                             </label>
                             <div className="mt-2">
@@ -123,6 +128,16 @@ export const Signup = () => {
                                 Submit
                             </button>
                         </div>
+
+                        <div className="flex justify-start">
+                            <p className="text-sm">
+                                Already have a account?
+                            <span className="text-indigo-600 hover:cursor-pointer" onClick={()=>navigate("/login")}>
+                                {" "}Sing in
+                            </span>
+                            </p>
+                        </div>
+
                     </form>
                 </div>
             </div>
