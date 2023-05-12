@@ -1,13 +1,12 @@
 import './App.css';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
-import BMI from './Pages/BMI';
-import LandingPage from './Pages/Home';
+import Allroutes from './Pages/Allroutes';
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <LandingPage/>
+      <Allroutes/>
       <Footer/>
     </div>
   );
