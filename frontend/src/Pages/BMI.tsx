@@ -9,26 +9,40 @@ const obj: { height: string; weight: string } = {
   weight: "",
 };
 export default function BMI() {
-  const [open, setOpen] = useState(false);
-  const [data, setData] = useState(obj);
-  const [bmi, setBmi] = useState("");
-  const cancelButtonRef = useRef(null);
-  const navigate = useNavigate();
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    const { name, value } = e.target;
-    setData({ ...data, [name]: value });
-  };
-  const generateStatement = (val: number) => {
-    if (val <= 18.5) {
-      return ` You fall in under-weight category we suggest you to increase your weight`;
-    } else if (val > 18.5 && val <= 24.9) {
-      return ` You fall in noraml category we suggest you to work on musscle gain`;
-    } else if (val > 24.9 && val <= 29.9) {
-      return ` You fall in overweight category we suggest you to lower down your BMI`;
-    } else if (val > 29.9 && val <= 34.9) {
-      return ` You fall in obase category we suggest you to lower down your BMI, higher body fat increase the chance of heart-attch and type-2 diabities`;
-    } else if (val > 34.9) {
-      return ` You fall in extremely obase category we suggest you to lower down your BMI, higher body fat increase the chance of heart-attch and type-2 diabities, please start following diet and strength training plan from today own words`;
+    const [open, setOpen] = useState(false)
+    const [data, setData] = useState(obj);
+    const [bmi,setBmi]=useState('');
+    const cancelButtonRef = useRef(null);
+    const navigate=useNavigate();
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+        const { name, value } = e.target;
+        setData({ ...data, [name]: value });
+    }
+    const generateStatement=(val:number)=>{
+        if(val<=18.5){
+            return ` You fall in under-weight category we suggest you to increase your weight`
+        }else if(val>18.5&&val<=24.9){
+            return ` You fall in noraml category we suggest you to work on musscle gain`
+        }else if(val>24.9&&val<=29.9){
+            return ` You fall in overweight category we suggest you to lower down your BMI`
+        }else if(val>29.9&&val<=34.9){
+            return ` You fall in obase category we suggest you to lower down your BMI, higher body fat increase the chance of heart-attch and type-2 diabities`
+        }else if(val>34.9){
+            return ` You fall in extremely obase category we suggest you to lower down your BMI, higher body fat increase the chance of heart-attch and type-2 diabities, please start following diet and strength training plan from today own words`
+        }
+    }
+    const calculateBMI = (weight: number, height: number): void => {
+        const arr=[];
+        let obj={}
+        const heightInMeters = height / 100;
+        const bmi = weight / (heightInMeters * heightInMeters);
+        const x=Math.round(bmi * 100) / 100
+        obj={weight,height,bmi:x};
+        arr.push(obj);
+        setBmi(String(x))
+        localStorage.setItem('userData',JSON.stringify(arr))
+        setOpen(true)
+
     }
   };
   const calculateBMI = (weight: number, height: number): void => {
