@@ -19,7 +19,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/feed", feedRouter);
-
 app.use("/user", userRouter);
 
 app.use(authentication);
