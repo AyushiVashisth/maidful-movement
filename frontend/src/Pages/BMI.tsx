@@ -32,11 +32,15 @@ export default function BMI() {
         }
     }
     const calculateBMI = (weight: number, height: number): void => {
+        const arr=[];
+        let obj={}
         const heightInMeters = height / 100;
         const bmi = weight / (heightInMeters * heightInMeters);
         const x=Math.round(bmi * 100) / 100
+        obj={weight,height,bmi:x};
+        arr.push(obj);
         setBmi(String(x))
-        generateStatement(x)
+        localStorage.setItem('userData',JSON.stringify(arr))
         setOpen(true)
     }
     const handleClick = (): void => {

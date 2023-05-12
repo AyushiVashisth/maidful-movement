@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router";
 import { useAppDispatch } from "../Redux/store";
+import { userLogin } from "../Redux/AuthLogin/login.action";
 
 
 export default function Login() {
@@ -25,9 +26,8 @@ export default function Login() {
   console.log(input)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-
-
+    e.preventDefault();
+    dispatch(userLogin(input))
   }
 
   return (
@@ -42,8 +42,8 @@ export default function Login() {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
 
           <form className="space-y-6" method="POST" onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+            <div >
+              <label htmlFor="email" className="flex text-sm font-medium leading-6 text-gray-900">
 
                 Email address
               </label>
