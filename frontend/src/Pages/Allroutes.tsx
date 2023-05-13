@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import BMI from "./BMI";
-import LandingPage from "./Home";
+import LandingPage from "./Home/Home";
 import UserDashBoard from "./UserDashboard";
 import Login from "./Login";
 import { Signup } from "./Signup";
-import Bmichat from "./BMIChat";
+import Bmichat from "./BMI/BMIChat";
 import GroupsPage from "./Group/Group";
 
 const Allroutes = () => {

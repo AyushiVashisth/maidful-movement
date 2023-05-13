@@ -39,8 +39,8 @@ interface weeklyReport {
   weight: number;
   bmi: number;
 }
-interface resWeeklyReport extends weeklyReport{
-  _id:string
+interface resWeeklyReport extends weeklyReport {
+  _id: string;
 }
 export interface SignUPData {
   name: string;
@@ -49,17 +49,16 @@ export interface SignUPData {
   gender: string;
   weeklyReports: Array<weeklyReport>;
 }
-export interface responce{
-  _id:string,
+export interface responce {
+  _id: string;
   name: string;
   email: string;
   password: string;
   gender: string;
   weeklyReports: Array<resWeeklyReport>;
 }
-export interface LoginRes{
-  msg:string,
-  token:string,
-  data:responce[]
+export interface LoginRes {
+  msg: string;
+  token: string;
+  data: responce[];
 }
-

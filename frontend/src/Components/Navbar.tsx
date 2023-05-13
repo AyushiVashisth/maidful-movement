@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../Images/logo.png";
 import user from "../Images/user.png";
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 const navigation = [
   { name: "Group", href: "group", current: false },
@@ -16,7 +16,7 @@ function classNames(...classes: any) {
 }
 
 export default function Navbar() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="fixed top-0 z-10 w-full">
       <Disclosure as="nav" className="bg-gray-800">
@@ -108,6 +108,16 @@ export default function Navbar() {
                         <Menu.Item>
                           {({ active }) => (
                             <p className="hover:cursor-pointer">Your Profile</p>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <p
+                              className="hover:cursor-pointer"
+                              onClick={() => navigate("/signup")}
+                            >
+                              Signup
+                            </p>
                           )}
                         </Menu.Item>
                         <Menu.Item>

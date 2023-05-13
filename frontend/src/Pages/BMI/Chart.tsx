@@ -1,7 +1,7 @@
 import { AgChartsReact } from "ag-charts-react";
 import { useState } from "react";
 import * as agCharts from "ag-charts-community";
-import { useAppSelector } from "../Redux/store";
+import { useAppSelector } from "../../Redux/store";
 
 // const newData = [
 //   {
@@ -115,9 +115,9 @@ import { useAppSelector } from "../Redux/store";
 // ];
 
 const ChartExample: React.FC = () => {
-  const data = useAppSelector((store)=> store.loginReducer.data) 
-  console.log("data",data)
-  
+  const data = useAppSelector((store) => store.loginReducer.data);
+  console.log("data", data);
+
   const [options, setOptions] = useState<any>({
     autoSize: true,
     data: data,
@@ -158,9 +158,9 @@ const ChartExample: React.FC = () => {
         },
         tooltip: {
           enabled: true,
-          renderer: function(params: any) {
+          renderer: function (params: any) {
             return `<div>${params.datum.date}: ${params.datum.bmi}</div>`;
-          }
+          },
         },
 
         yName: "BMI",
@@ -182,4 +182,4 @@ const ChartExample: React.FC = () => {
 
   return <AgChartsReact options={options} />;
 };
-export default ChartExample
+export default ChartExample;

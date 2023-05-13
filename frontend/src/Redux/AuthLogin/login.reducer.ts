@@ -1,20 +1,23 @@
-import { AuthAction } from './login.action'
-import {USER_LOGIN_REQUEST,USER_LOGIN_SUCCESS,USER_LOGIN_ERROR} from './login.actionType'
-
+import { AuthAction } from "./login.action";
+import {
+  USER_LOGIN_REQUEST,
+  USER_LOGIN_SUCCESS,
+  USER_LOGIN_ERROR,
+} from "./login.actionType";
 
 interface Iinitial {
-  token:string,
+  token: string;
   isLoading: boolean;
   error: boolean;
   isAuth: boolean;
-  data:any;
+  data: any;
 }
 const initial: Iinitial = {
-  token:'',
+  token: "",
   isLoading: false,
   error: false,
   isAuth: false,
-  data:[]
+  data: [],
 };
 export const loginReducer = (state = initial, action: AuthAction) => {
   switch (action.type) {
@@ -27,8 +30,8 @@ export const loginReducer = (state = initial, action: AuthAction) => {
       return {
         ...state,
         isLoading: false,
-        token:action.payload.token,
-        data:action.payload.data.weeklyReports,
+        token: action.payload.token,
+        data: action.payload.data.weeklyReports,
         isAuth: true,
       };
     }

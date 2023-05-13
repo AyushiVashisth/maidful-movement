@@ -8,7 +8,7 @@ const Plans = () => {
           <div className="w-full">
             <img
               className="w-full"
-              src="https://ychef.files.bbci.co.uk/976x549/p0bgdpy4.jpg"
+              src="https://ychef.files.bbci.co.uk/976x549/p0bgdpy4.jpg" alt="pb"
             />
           </div>
           <div className="w-full">
@@ -39,7 +39,7 @@ const Plans = () => {
           <div className="w-1/2">
             <img
               className="w-full"
-              src="https://ychef.files.bbci.co.uk/976x549/p0bgdpy4.jpg"
+              src="https://ychef.files.bbci.co.uk/976x549/p0bgdpy4.jpg" alt="pb"
             />
           </div>
           <div className="w-1/2">

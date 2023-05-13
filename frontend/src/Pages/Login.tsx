@@ -14,7 +14,7 @@ export default function Login() {
     password: "",
   };
   const navigate = useNavigate();
-  const dispatch=useAppDispatch()
+  const dispatch = useAppDispatch();
   const [input, setInput] = useState(initial);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
@@ -24,9 +24,10 @@ export default function Login() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(userLogin(input)).then((res:LoginRes)=>localStorage.setItem("token",res?.token)).then(()=>navigate("/dashboard"))
-  }
-
+    dispatch(userLogin(input))
+      .then((res: LoginRes) => localStorage.setItem("token", res?.token))
+      .then(() => navigate("/dashboard"));
+  };
 
   return (
     <>
@@ -39,9 +40,11 @@ export default function Login() {
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" method="POST" onSubmit={handleSubmit}>
-
-            <div >
-              <label htmlFor="email" className="flex text-sm font-medium leading-6 text-gray-900">
+            <div>
+              <label
+                htmlFor="email"
+                className="flex text-sm font-medium leading-6 text-gray-900"
+              >
                 Email address
               </label>
               <div className="mt-2">
@@ -99,7 +102,7 @@ export default function Login() {
                 onClick={() => navigate("/signup")}
               >
                 {" "}
-                Sing up
+                SignUp
               </span>
             </p>
           </div>
