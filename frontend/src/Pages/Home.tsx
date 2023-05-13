@@ -15,8 +15,9 @@ import img11 from "../Images/What is Keto Diet_.png";
 import img12 from "../Images/Healthy-Meals-to-Lose-Weight.jpg";
 import img13 from "../Images/istockphoto-1283496379-170667a.jpg";
 import img14 from "../Images/whm-infographic-diets-a2-1605645624.png";
-
 import AutomaticCarousel from "./Slider";
+
+// import AutomaticCarousel from "./Slider";
 type Card = {
   title: string;
   imageUrl: string;

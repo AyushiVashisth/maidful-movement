@@ -9,7 +9,7 @@ interface Iinitial {
   isLoading: boolean;
   error: boolean;
   isAuth: boolean;
-  data:any;
+  data:responce[];
 }
 const initial: Iinitial = {
   token:'',
@@ -19,6 +19,7 @@ const initial: Iinitial = {
   data:[]
 };
 export const loginReducer = (state = initial, action: AuthAction) => {
+  console.log("a",action)
   switch (action.type) {
     case USER_LOGIN_REQUEST:
       return {
@@ -30,7 +31,7 @@ export const loginReducer = (state = initial, action: AuthAction) => {
         ...state,
         isLoading: false,
         token:action.payload.token,
-        data:action.payload.data,
+        data:action.payload.data.weeklyReports,
         isAuth: true,
       };
     }
