@@ -1,4 +1,4 @@
-import { LoginData } from "../../utils/type";
+import { LoginData, LoginRes } from "../../utils/type";
 import { AppDispatch } from "../store";
 import { userLoginAPI } from "./login.api";
 import {
@@ -12,7 +12,7 @@ export interface IuserLoginRequsest {
 }
 export interface IuserLoginSuccess {
   type: typeof USER_LOGIN_SUCCESS;
-  payload: string;
+  payload: any;
 }
 export interface IuserLoginError {
   type: typeof USER_LOGIN_ERROR;
@@ -28,10 +28,10 @@ const userLoginRequest = (): IuserLoginRequsest => {
     type: USER_LOGIN_REQUEST,
   };
 };
-const userLoginSuccess = (token: string): IuserLoginSuccess => {
+const userLoginSuccess = (data:any): IuserLoginSuccess => {
   return {
     type: USER_LOGIN_SUCCESS,
-    payload: token,
+    payload: data,
   };
 };
 const userLoginError = (): IuserLoginError => {
@@ -45,8 +45,8 @@ export const userLogin: any =
     try {
       let data = await userLoginAPI(payload);
       if (data) {
-        console.log(data);
         dispatch(userLoginSuccess(data));
+        return data
       }
     } catch (err) {
       dispatch(userLoginError());

@@ -1,37 +1,49 @@
-import { useLocation, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import React, { useState } from "react";
+import { useAppDispatch } from "../Redux/store";
+import { userSingupRequest } from "../Redux/AuthSignup/signup.action";
 
-import { useDispatch } from "react-redux";
 
 export const Signup = () => {
     interface Singleuser {
         name: string;
         email: string;
         password: string;
-        phone_number: string;
+        gender: string;
+    }
+    interface loacalInterface {
+        weight: number, height: number, bmi: number
     }
     const initial: Singleuser = {
         name: "",
         email: "",
         password: "",
-        phone_number: ""
+        gender: "male"
     }
-    const dispatch = useDispatch();
-    const location = useLocation();
+    const dispatch = useAppDispatch();
+
 
     const navigate = useNavigate()
 
     const [input, setInput] = useState(initial);
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setInput({ ...input, [name]: value })
     }
-    console.log(input)
+    const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const { name, value } = e.target;
+        setInput({ ...input, [name]: value })
+    }
+    // console.log(input)
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        // dispatch(usersignupaction(input))
+        e.preventDefault();
+        let payload = {}
+        const arr: Array<string> = JSON?.parse(localStorage.getItem("userData") || "null");
+        payload = { ...input, weeklyReports: arr?.[0] }
+        // console.log(payload,process.env.REACT_APP_URL)
 
+        dispatch(userSingupRequest(payload))
     }
     return (
         <>
@@ -46,10 +58,7 @@ export const Signup = () => {
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form className="space-y-6" onSubmit={handleSubmit} method="POST">
                         <div>
-
                             <label htmlFor="fname" className="flex text-sm font-medium leading-6 text-gray-900">
-
-
                                 Name
                             </label>
                             <div className="mt-2">
@@ -125,6 +134,7 @@ export const Signup = () => {
                             </label>
                             <div className="mt-2">
                                 <select
+                                    onChange={handleSelect}
                                     id="gender"
                                     name="gender"
                                     autoComplete="gender"
@@ -154,9 +164,9 @@ export const Signup = () => {
                                 </span>
                             </p>
                         </div>
-          </form>
-        </div>
-      </div>
-    </>
-  );
+                    </form>
+                </div>
+            </div>
+        </>
+    );
 };
