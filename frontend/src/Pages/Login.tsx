@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation, useNavigate } from "react-router";
+import {  useNavigate } from "react-router";
 import { useAppDispatch } from "../Redux/store";
 import { userLogin } from "../Redux/AuthLogin/login.action";
 import { LoginRes } from "../utils/type";

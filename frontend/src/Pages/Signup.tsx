@@ -10,11 +10,6 @@ export const Signup = () => {
     password: string;
     gender: string;
   }
-  interface loacalInterface {
-    weight: number;
-    height: number;
-    bmi: number;
-  }
   const initial: Singleuser = {
     name: "",
     email: "",
