@@ -44,15 +44,6 @@ export default function BMI() {
         setOpen(true)
 
     }
-  };
-  const calculateBMI = (weight: number, height: number): void => {
-    const heightInMeters = height / 100;
-    const bmi = weight / (heightInMeters * heightInMeters);
-    const x = Math.round(bmi * 100) / 100;
-    setBmi(String(x));
-    generateStatement(x);
-    setOpen(true);
-  };
   const handleClick = (): void => {
     calculateBMI(+data.weight, +data.height);
   };
