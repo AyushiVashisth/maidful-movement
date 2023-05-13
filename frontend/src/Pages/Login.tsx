@@ -13,6 +13,7 @@ export default function Login() {
     password: "",
   };
   const navigate = useNavigate();
+  const dispatch=useAppDispatch()
   const [input, setInput] = useState(initial);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
