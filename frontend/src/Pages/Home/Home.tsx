@@ -1,7 +1,6 @@
 import React from "react";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-
 import img1 from "../../Images/062519_tMHFA_StressTips_Infographic_v2.png";
 import img2 from "../../Images/istockphoto-1283496379-170667a.jpg";
 import img3 from "../../Images/Featured_Blog_Post_images_Nov_2021-Dec_2021-1_1024x1024.webp";
@@ -16,7 +15,6 @@ import img11 from "../../Images/What is Keto Diet_.png";
 import img12 from "../../Images/Healthy-Meals-to-Lose-Weight.jpg";
 import img13 from "../../Images/istockphoto-1283496379-170667a.jpg";
 import img14 from "../../Images/whm-infographic-diets-a2-1605645624.png";
-
 import AutomaticCarousel from "./Slider";
 type Card = {
   title: string;
