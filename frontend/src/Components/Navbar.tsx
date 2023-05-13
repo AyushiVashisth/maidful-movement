@@ -6,8 +6,7 @@ import user from "../Images/user.png";
 // import { useNavigate } from 'react-router-dom'
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
+  { name: "Group", href: "group", current: false },
   { name: "Check your BMI", href: "bmi", current: false },
   { name: "Calendar", href: "#", current: false },
 ];
