@@ -33,16 +33,33 @@ export interface LoginData {
   email: string;
   password: string;
 }
-interface IweeklyReport {
+interface weeklyReport {
   date: string;
   height: number;
   weight: number;
   bmi: number;
+}
+interface resWeeklyReport extends weeklyReport{
+  _id:string
 }
 export interface SignUPData {
   name: string;
   email: string;
   password: string;
   gender: string;
-  weeklyReports: Array<IweeklyReport>;
+  weeklyReports: Array<weeklyReport>;
 }
+export interface responce{
+  _id:string,
+  name: string;
+  email: string;
+  password: string;
+  gender: string;
+  weeklyReports: Array<resWeeklyReport>;
+}
+export interface LoginRes{
+  msg:string,
+  token:string,
+  data:responce[]
+}
+

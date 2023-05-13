@@ -37,7 +37,7 @@ export default function BMI() {
         const heightInMeters = height / 100;
         const bmi = weight / (heightInMeters * heightInMeters);
         const x=Math.round(bmi * 100) / 100
-        obj={weight,height,bmi:x};
+        obj={weight,height,bmi:x,date:new Date()};
         arr.push(obj);
         setBmi(String(x))
         localStorage.setItem('userData',JSON.stringify(arr))

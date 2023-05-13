@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { useAppDispatch } from "../Redux/store";
 import { userLogin } from "../Redux/AuthLogin/login.action";
+import { LoginRes } from "../utils/type";
 
 export default function Login() {
   interface Singleuserlogin {
@@ -23,7 +24,7 @@ export default function Login() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(userLogin(input))
+    dispatch(userLogin(input)).then((res:LoginRes)=>localStorage.setItem("token",res?.token)).then(()=>navigate("/dashboard"))
   }
 
 
