@@ -24,7 +24,7 @@ const callouts = [
     imageSrc:
       "https://info.totalwellnesshealth.com/hs-fs/hubfs/HealthBenefitsFitness.png?width=675&name=HealthBenefitsFitness.png",
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-    href: "#",
+    href: "/workoutchart",
   },
 ];
 
