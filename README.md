@@ -70,18 +70,52 @@ This health and wellness web platform offers users a range of tools and features
 <br/>
 
 ## Home Page
+<<<<<<< HEAD
 
 ## Signup Page
 
 ## Login Page
 
 # Languages Used :
+=======
+![Screenshot 2023-05-14 151903](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/8ec053bb-397e-4c77-a9f7-1698c210b536)
+
+![Screenshot 2023-05-14 151911](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/ca5d7819-ac6e-49dc-bcef-f3bfcabaa377)
+
+## Signup Page
+![Screenshot 2023-05-14 151300](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/a16171a2-8b37-45a5-a4cf-bf6669c0cf1c)
+
+## Login Page
+![Screenshot 2023-05-14 151311](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/1e5c1ec5-02a1-47cb-b7df-54de3fc55e67)
+
+## Group Health 
+![Screenshot 2023-05-14 151414](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/47c85670-e7cf-46a0-9024-9540521195be)
+
+![Screenshot 2023-05-14 151425](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/82910c7c-e2c3-45a8-89e0-1a5b3a0181b8)
+
+## BMI Check
+![Screenshot 2023-05-14 151439](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/6a981b3c-d679-455b-9f54-eefceebf74c4)
+
+## Collection
+![Screenshot 2023-05-14 151331](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/3d2f4ec9-997b-4d4c-b727-0e5307dec3a6)
+
+## BMI Graph
+![Screenshot 2023-05-14 151340](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/be965390-6484-45fb-9de5-c9463c6f0e15)
+
+## Deit Plans/Workout Plans
+![Screenshot 2023-05-14 151933](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/9a8637db-2334-4cf8-a37f-1e7cb55f2aba)
+
+![Screenshot 2023-05-14 151943](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/fc7f128d-240e-4bf7-a321-d6612266226b)
+
+
+ ## Languages Used :
+>>>>>>> 16a57ffde770c287ce0c0801983ad918e044abce
 
 <ul dir="auto">
-  <ol dir="auto">◉ Typescript : 1.6%</ol>
- <ol dir="auto">◉ JavaScript : 98.4%</ol>
- <ol dir="auto">◉ HTML : 1.6%</ol>
-  <ol dir="auto">◉ CSS : 1.6%</ol>
+  <ol dir="auto">◉ Typescript : 89.6%</ol>
+ <ol dir="auto">◉ JavaScript : 8.0%</ol>
+ <ol dir="auto">◉ HTML : 1.5%</ol>
+  <ol dir="auto">◉ CSS : 0.9%</ol>
  </ul>
  
 ### This report is provided by the Github language used stats. So, this is the total percentage of the coding languages.
