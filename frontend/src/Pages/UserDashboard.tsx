@@ -16,7 +16,7 @@ const callouts = [
       "https://www.verywellfit.com/thmb/XoYUSTc0dd_4zpbsp6G_iBzh45A=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Plant-baseddietjenifoto-73193eabbdc9402ab3bc535562e2ed7e.jpg",
     imageAlt:
       "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-    href: "#",
+    href: "/dietNworkout",
   },
   {
     name: "Travel",
@@ -24,7 +24,7 @@ const callouts = [
     imageSrc:
       "https://info.totalwellnesshealth.com/hs-fs/hubfs/HealthBenefitsFitness.png?width=675&name=HealthBenefitsFitness.png",
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-    href: "/workoutchart",
+    href: "/dietNworkout",
   },
 ];
 
