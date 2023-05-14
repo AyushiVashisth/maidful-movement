@@ -141,7 +141,7 @@ const GroupsPage: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto py-7" style={{ marginTop: "30px" }}>
+    <div className="container mx-auto py-7 mt-8">
       <h1 className="text-4xl font-bold mb-4">Groups</h1>
       <div className="grid grid-cols-5 gap-4">
         {groups.map((group) => (
