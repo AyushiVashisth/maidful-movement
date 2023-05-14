@@ -4,9 +4,9 @@ import BMI from "./BMI";
 import LandingPage from "./Home/Home";
 import UserDashBoard from "./UserDashboard";
 import Bmichat from "./BMI/BMIChat";
-import GroupsPage from "./Group/Group";
 import Login from "./Login";
 import { Signup } from "./Signup";
+import GroupsPage from "./Group/Group";
 
 const Allroutes = () => {
   return (

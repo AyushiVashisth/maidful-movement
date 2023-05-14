@@ -8,7 +8,7 @@ export const userLoginAPI = async (payload: LoginData) => {
       `${process.env.REACT_APP_URL}/user/login`,
       payload
     );
-    console.log(res.data.data.weeklyReports);
+    console.log("w",res.data);
     return res.data;
   } catch (er) {
     console.error("user login api error-");
