@@ -71,10 +71,32 @@ This health and wellness web platform offers users a range of tools and features
 <br/>
 
 ## Home Page
-## Signup Page
-## Login Page
+![Screenshot 2023-05-14 151218](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/970e2e2c-122d-4b39-804b-6ba1e5090fb3)
 
- # Languages Used :
+## Signup Page
+![Screenshot 2023-05-14 151300](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/a16171a2-8b37-45a5-a4cf-bf6669c0cf1c)
+
+## Login Page
+![Screenshot 2023-05-14 151311](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/1e5c1ec5-02a1-47cb-b7df-54de3fc55e67)
+
+## Group Health 
+![Screenshot 2023-05-14 151414](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/47c85670-e7cf-46a0-9024-9540521195be)
+
+![Screenshot 2023-05-14 151425](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/82910c7c-e2c3-45a8-89e0-1a5b3a0181b8)
+
+## BMI Check
+![Screenshot 2023-05-14 151439](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/6a981b3c-d679-455b-9f54-eefceebf74c4)
+
+## Collection
+![Screenshot 2023-05-14 151331](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/3d2f4ec9-997b-4d4c-b727-0e5307dec3a6)
+
+## BMI Graph
+![Screenshot 2023-05-14 151340](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/be965390-6484-45fb-9de5-c9463c6f0e15)
+
+## Deit Plans/Workout Plans
+![Screenshot 2023-05-14 151359](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/ddf23b69-0d40-48a2-ae64-f44e36470ae3)
+
+ ## Languages Used :
 
 <ul dir="auto">
   <ol dir="auto">◉ Typescript : 1.6%</ol>
