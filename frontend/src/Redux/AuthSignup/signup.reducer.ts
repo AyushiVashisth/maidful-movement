@@ -13,6 +13,7 @@ const initial:Iinitial={
     data:[]
 }
 export const signupReducer=(state=initial,action:SingupAction)=>{
+  console.log("a",action)
     switch (action.type) {
         case SIGNUP_REQUEST:
           return {
