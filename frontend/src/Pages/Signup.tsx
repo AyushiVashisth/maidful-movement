@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import React, { useState } from "react";
 import { useAppDispatch } from "../Redux/store";
 import { userSingupRequest } from "../Redux/AuthSignup/signup.action";
+import Swal from 'sweetalert2'
 
 export const Signup = () => {
   interface Singleuser {
@@ -41,6 +42,12 @@ export const Signup = () => {
     // console.log(payload,process.env.REACT_APP_URL)
 
     dispatch(userSingupRequest(payload));
+    Swal.fire(
+      'Successful',
+      'You clicked the button!',
+      'success'
+    )
+    navigate("/login")
   };
   return (
     <>
