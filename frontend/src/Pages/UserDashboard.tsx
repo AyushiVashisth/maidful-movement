@@ -50,12 +50,7 @@ export default function UserDashBoard() {
                     className="h-full w-full object-contain object-center"
                   />
                 </div>
-                <h3 className="mt-6 text-sm text-gray-500">
-                  {/* <a href={callout.href}>
-                      <span className="absolute inset-0" />
-                      {callout.name}
-                    </a> */}
-                </h3>
+                <h3 className="mt-6 text-sm text-gray-500"></h3>
                 <p className="text-base font-semibold text-gray-900">
                   {callout.description}
                 </p>

@@ -20,7 +20,7 @@ const initial: Iinitial = {
   data: [],
 };
 export const loginReducer = (state = initial, action: AuthAction) => {
-  console.log("a",action)
+  console.log("a", action);
   switch (action.type) {
     case USER_LOGIN_REQUEST:
       return {

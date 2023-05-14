@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 import React, { useState } from "react";
 import { useAppDispatch } from "../Redux/store";
 import { userSingupRequest } from "../Redux/AuthSignup/signup.action";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 export const Signup = () => {
   interface Singleuser {
@@ -30,7 +30,6 @@ export const Signup = () => {
     const { name, value } = e.target;
     setInput({ ...input, [name]: value });
   };
-  // console.log(input)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -39,15 +38,10 @@ export const Signup = () => {
       localStorage.getItem("userData") || "null"
     );
     payload = { ...input, weeklyReports: arr?.[0] };
-    // console.log(payload,process.env.REACT_APP_URL)
 
     dispatch(userSingupRequest(payload));
-    Swal.fire(
-      'Successful',
-      'You clicked the button!',
-      'success'
-    )
-    navigate("/login")
+    Swal.fire("Successful", "You clicked the button!", "success");
+    navigate("/login");
   };
   return (
     <>
@@ -121,24 +115,6 @@ export const Signup = () => {
                 />
               </div>
             </div>
-            {/* <div>
-
-                            <label htmlFor="fphone_number" className="flex text-sm font-medium leading-6 text-gray-900">
-
-                                Gender
-                            </label>
-                            <div className="mt-2">
-                                <input
-                                    onChange={handleChange}
-                                    id="fphone_number"
-                                    name="phone_number"
-                                    type="text"
-                                    autoComplete="phone_number"
-                                    required
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                />
-                            </div>
-                        </div> */}
             <div className="sm:col-span-3">
               <label
                 htmlFor="gender"

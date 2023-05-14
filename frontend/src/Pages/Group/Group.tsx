@@ -201,7 +201,7 @@ export default GroupsPage;
 // // आपका कोड यहां ...
 
 // const socket = io('http://localhost:3000', {
-//   transports: ['websocket'], 
+//   transports: ['websocket'],
 // });
 
 // interface ChatMessage {
@@ -436,5 +436,3 @@ export default GroupsPage;
 // };
 
 // export default GroupsPage;
-
-
