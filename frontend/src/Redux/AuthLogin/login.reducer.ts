@@ -32,7 +32,7 @@ export const loginReducer = (state = initial, action: AuthAction) => {
         ...state,
         isLoading: false,
         token: action.payload.token,
-        data: action.payload.data.weeklyReports,
+        data: action.payload.data[0].weeklyReports,
         isAuth: true,
       };
     }
