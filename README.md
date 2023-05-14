@@ -8,7 +8,7 @@ This health and wellness web platform offers users a range of tools and features
 
 <br/>
 
-### Frontend Deployed URL 👉 [Click here]()
+### Frontend Deployed URL 👉 [Click here](https://maidfull-movement.vercel.app/)
 
 ### Backend API 👉 [Click here](https://maidful-movement.onrender.com)
 
