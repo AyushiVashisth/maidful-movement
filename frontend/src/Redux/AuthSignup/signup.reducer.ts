@@ -6,12 +6,12 @@ interface Iinitial{
     isError:boolean,
     data:[]
 }
-
 const initial:Iinitial={
     isLoading:false,
     isError:false,
     data:[]
 }
+
 export const signupReducer=(state=initial,action:SingupAction)=>{
   console.log("a",action)
     switch (action.type) {

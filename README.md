@@ -14,7 +14,6 @@ This health and wellness web platform offers users a range of tools and features
 
 <br/>
 
-
  <h2 align="left">
 <img src="https://art.pixilart.com/486745d4bb1ef18.gif"  width="20" height="20" align="center">
  Languages and Tools
@@ -64,17 +63,19 @@ This health and wellness web platform offers users a range of tools and features
 
 - Account creation, login, signup and logout functionality.
 - Sign-up and log-in validations.
-- JWT (JSON Web Token) Authentication and BcryptJS Password Hashing 
+- JWT (JSON Web Token) Authentication and BcryptJS Password Hashing
 -
-- Data fetching from Backend. 
+- Data fetching from Backend.
 
 <br/>
 
 ## Home Page
+
 ## Signup Page
+
 ## Login Page
 
- # Languages Used :
+# Languages Used :
 
 <ul dir="auto">
   <ol dir="auto">◉ Typescript : 1.6%</ol>
@@ -100,7 +101,7 @@ This health and wellness web platform offers users a range of tools and features
 4. Run `npm start` to start the development server
 
 <br/><br/>
- 
+
 # Our Team :
 
  <ul>
@@ -116,7 +117,7 @@ This health and wellness web platform offers users a range of tools and features
 
 # Team Work Efforts :
 
-First of all, we created a Slack and zoom group to establish communication between all the team members. 
+First of all, we created a Slack and zoom group to establish communication between all the team members.
 Then we connected over zoom meet for further discussion about assigned project.
 
 In a zoom meet we divideed small parts of project to all the team-member.
@@ -128,19 +129,20 @@ All push the data in Git-hub to their respective branch and merge them to main b
 Finally we make the presentation of the project.
 <br/><br/>
 
-# Our Learnings : 
-On this journey we faced many issues, but we keep motivated each other with patience. 
+# Our Learnings :
+
+On this journey we faced many issues, but we keep motivated each other with patience.
 
 - We all learned how to read and understand the code of other team members.
 
 - We learned how to write more efficient and clean code.
 
-- Even though  We also learned how to plan a project and how to execute it step by step.
+- Even though We also learned how to plan a project and how to execute it step by step.
 
 - By this Project we have learned how to collaborate and communicate with team effectively and improving the productivity.
 
 - We also got a glimpse of using GitHub for the version control.
-<br/><br/>
+  <br/><br/>
 
 # Contributing
 
