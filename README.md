@@ -71,7 +71,9 @@ This health and wellness web platform offers users a range of tools and features
 <br/>
 
 ## Home Page
-![Screenshot 2023-05-14 151218](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/970e2e2c-122d-4b39-804b-6ba1e5090fb3)
+![Screenshot 2023-05-14 151903](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/8ec053bb-397e-4c77-a9f7-1698c210b536)
+
+![Screenshot 2023-05-14 151911](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/ca5d7819-ac6e-49dc-bcef-f3bfcabaa377)
 
 ## Signup Page
 ![Screenshot 2023-05-14 151300](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/a16171a2-8b37-45a5-a4cf-bf6669c0cf1c)
@@ -94,7 +96,10 @@ This health and wellness web platform offers users a range of tools and features
 ![Screenshot 2023-05-14 151340](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/be965390-6484-45fb-9de5-c9463c6f0e15)
 
 ## Deit Plans/Workout Plans
-![Screenshot 2023-05-14 151359](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/ddf23b69-0d40-48a2-ae64-f44e36470ae3)
+![Screenshot 2023-05-14 151933](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/9a8637db-2334-4cf8-a37f-1e7cb55f2aba)
+
+![Screenshot 2023-05-14 151943](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/fc7f128d-240e-4bf7-a321-d6612266226b)
+
 
  ## Languages Used :
 
