@@ -7,6 +7,7 @@ import Bmichat from "./BMI/BMIChat";
 import Login from "./Login";
 import { Signup } from "./Signup";
 import GroupsPage from "./Group/Group";
+import WorkoutChat from "./WorkoutPlans/WorkoutChat";
 
 const Allroutes = () => {
   return (
@@ -18,6 +19,7 @@ const Allroutes = () => {
         <Route path="/signup" element={<Signup/>} />
         <Route path="/dashboard" element={<UserDashBoard />} />
         <Route path="/bmichart" element={<Bmichat />} />
+        <Route path="/workoutchart" element={<WorkoutChat />} />
         <Route path="/group" element={<GroupsPage />} />
       </Routes>
     </div>
