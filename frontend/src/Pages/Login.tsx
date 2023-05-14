@@ -3,6 +3,7 @@ import {  useNavigate } from "react-router";
 import { useAppDispatch } from "../Redux/store";
 import { userLogin } from "../Redux/AuthLogin/login.action";
 import { LoginRes } from "../utils/type";
+import Swal from 'sweetalert2'
 
 export default function Login() {
   interface Singleuserlogin {
@@ -25,8 +26,15 @@ export default function Login() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     dispatch(userLogin(input))
-      .then((res: LoginRes) => localStorage.setItem("token", res?.token))
-      .then(() => navigate("/dashboard"));
+      .then((res: LoginRes) =>{ localStorage.setItem("token", res?.token)})
+      .then(() =>{ 
+        Swal.fire(
+          'Login Successful',
+          'You clicked the button!',
+          'success'
+        )
+        navigate("/dashboard")
+      });
   };
 
   return (
