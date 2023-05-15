@@ -64,23 +64,19 @@ This health and wellness web platform offers users a range of tools and features
 - Account creation, login, signup and logout functionality.
 - Sign-up and log-in validations.
 - JWT (JSON Web Token) Authentication and BcryptJS Password Hashing
--
+- 
 - Data fetching from Backend.
 
 <br/>
 
 ## Home Page
-<<<<<<< HEAD
+![Screenshot 2023-05-15 031155](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/8611238c-ded0-48cb-8e7b-25842b8effbd)
 
-## Signup Page
+![Screenshot 2023-05-15 031215](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/87666eac-3470-4b75-b236-3ea23bcb8508)
 
-## Login Page
+![Screenshot 2023-05-15 031227](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/98c1f7fb-ece6-432c-aa8e-cb5aa875bd2b)
 
-# Languages Used :
-=======
-![Screenshot 2023-05-14 151903](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/8ec053bb-397e-4c77-a9f7-1698c210b536)
-
-![Screenshot 2023-05-14 151911](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/ca5d7819-ac6e-49dc-bcef-f3bfcabaa377)
+![Screenshot 2023-05-15 031238](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/fd2c3fbf-6695-4fe3-b2e3-162780b7baa2)
 
 ## Signup Page
 ![Screenshot 2023-05-14 151300](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/a16171a2-8b37-45a5-a4cf-bf6669c0cf1c)
@@ -103,19 +99,21 @@ This health and wellness web platform offers users a range of tools and features
 ![Screenshot 2023-05-14 151340](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/be965390-6484-45fb-9de5-c9463c6f0e15)
 
 ## Deit Plans/Workout Plans
-![Screenshot 2023-05-14 151933](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/9a8637db-2334-4cf8-a37f-1e7cb55f2aba)
+![Screenshot 2023-05-15 031412](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/82af0665-8b3f-4e8e-98e4-7e2b9684d48a)
 
-![Screenshot 2023-05-14 151943](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/fc7f128d-240e-4bf7-a321-d6612266226b)
+![Screenshot 2023-05-15 031426](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/d9c35db8-75d7-4775-949b-dd1d85638b29)
 
+![Screenshot 2023-05-15 031447](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/e88f2bb8-7672-438c-9bcb-9f0df5c8345f)
 
- ## Languages Used :
->>>>>>> 16a57ffde770c287ce0c0801983ad918e044abce
+![Screenshot 2023-05-15 031500](https://github.com/AyushiVashisth/maidful-movement/assets/107119119/328a99be-069a-43f6-837a-d1235aa9e0e0)
+
+## Languages Used :
 
 <ul dir="auto">
-  <ol dir="auto">◉ Typescript : 89.6%</ol>
+ <ol dir="auto">◉ Typescript : 89.6%</ol>
  <ol dir="auto">◉ JavaScript : 8.0%</ol>
  <ol dir="auto">◉ HTML : 1.5%</ol>
-  <ol dir="auto">◉ CSS : 0.9%</ol>
+ <ol dir="auto">◉ CSS : 0.9%</ol>
  </ul>
  
 ### This report is provided by the Github language used stats. So, this is the total percentage of the coding languages.
